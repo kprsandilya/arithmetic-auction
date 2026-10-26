@@ -1,0 +1,28 @@
+:root {
+  --gold: #ead89f;
+  --gold-deep: #d9c27a;
+  --ink: #111;
+  --paper: #fffdf6;
+  --green: #6aa84f;
+  --blue: #3d85c6;
+  --red: #c0392b;
+  --muted: #6b6250;
+  --title-font: 'Cinzel', 'Trajan Pro', Georgia, serif;
+  --body-font: 'Barlow', 'Segoe UI', system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+.tile {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #111;
+  border-radius: 4px;
+  min-width: 2.2em;
+  padding: 0.15em 0.5em;
+  font-family: var(--body-font);
+}
+.tile.num { background: var(--blue); }
+.tile.op { background: var(--green); }

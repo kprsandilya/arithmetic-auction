@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Numbers Auction — Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Cinzel:wght@700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="shared.css" />
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">Numbers Auction <span>Admin</span></div>
+    <button id="open-display" class="btn primary">Open display window ↗</button>
+    <div class="group">
+      <span class="group-label">Room screen</span>
+      <div id="view-switch" class="seg"></div>
+    </div>
+    <div class="group timer">
+      <span class="group-label">Timer</span>
+      <span id="timer-readout">2:00</span>
+      <input id="timer-duration" type="number" min="5" step="5" title="Duration in seconds" />
+      <span class="unit">s</span>
+      <button id="timer-start" class="btn">Start</button>
+      <button id="timer-add" class="btn" title="Add 30 seconds">+30s</button>
+      <button id="timer-reset" class="btn">Reset</button>
+    </div>
+    <div id="save-status" class="save-status">Loading…</div>
+  </header>
+
+  <nav class="tabs" id="tabs">
+    <button data-tab="rounds" class="active">Rounds &amp; Bidding</button>
+    <button data-tab="final">Final Scoring</button>
+    <button data-tab="setup">Setup</button>
+  </nav>
+
+  <main id="main"></main>
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="game.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>

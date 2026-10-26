@@ -1,0 +1,9 @@
+{
+  "name": "numbers-auction",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Admin console + screen-share display for the Numbers (Arithmetic) Auction game",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
